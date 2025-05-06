@@ -4,7 +4,6 @@
     if($dbconn) {
         $query = "SELECT * FROM cars";
         $result = mysqli_query ($dbconn, $query)
-        if($result) {
             echo "<table border='1'>";
             echo "<tr><th>ID</th><th>Make</th><th>Model</th><th>Price</th><th>Year of Manufacture</th></tr>";
             while ($row = mysqli_fetch_assoc($result)) {
@@ -24,5 +23,4 @@
         }
         mysqli_close($dbconn);
     else echo "<p>Unable to connect to db</p>";
-    }
 ?>
