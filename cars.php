@@ -13,8 +13,6 @@
                 echo "<td>" . $row['yom'] . "</td>";
                 echo "</tr>";
             }
-
-            echo "</table>";
                 }
         else{
             echo "<p>There are no cars to display.</p>"
