@@ -17,7 +17,7 @@
             echo "</table>";
                 }
         else{
-            echo "<p>There are noi cars to display.</p>"
+            echo "<p>There are no cars to display.</p>"
         }
         mysqli_close($dbconn);
     else echo "<p>Unable to connect to db</p>";
