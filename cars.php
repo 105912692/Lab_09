@@ -4,8 +4,6 @@
     if($dbconn) {
         $query = "SELECT * FROM cars";
         $result = mysqli_query ($dbconn, $query)
-            echo "<table border='1'>";
-            echo "<tr><th>ID</th><th>Make</th><th>Model</th><th>Price</th><th>Year of Manufacture</th></tr>";
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>";
                 echo "<td>" . $row['car_id'] . "</td>";
